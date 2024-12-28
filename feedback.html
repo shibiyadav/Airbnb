@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="AirBNB main page" />
+    <meta name="author" content="anhtumai" />
+
+    <title>AirBNB main page</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="nav">
+        <svg
+            width="1.25rem"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            fill-opacity="0"
+            stroke="currentColor"
+            stroke-width="1.5"
+            focusable="false"
+            aria-hidden="true"
+            stroke-linecap="round"
+            stroke-linejoin="round"></svg>
+          </svg>
+
+      
+        <a class="active" href="index.html">Home</a>
+        <a href="feedback.html">Feedbacks</a>
+        <a href="about.html">About</a>
+      </div>
+    </header>
+    <div>
+      <div>
+        <h1>Feedback</h1>
+        <p class="ht">
+          Your feedbacks help us improve our service.<br />
+          Thank you so much !!!
+        </p>
+      </div>
+      <div class="form">
+        <form>
+          <h4>Guest Experience</h4>
+          <br />
+          <div>
+            <div style="display: flex;">
+              <div class="flex-item">
+                <label for="cleaniness">Cleaniness</label>
+                <input
+                  type="range"
+                  id="cleaniness"
+                  name="cleaniness"
+                  min="0"
+                  max="10"
+                  step="0.5"
+                />
+              </div>
+              <div class="flex-item">
+                <label for="staff">Staff</label>
+                <input type="range" id="staff" name="staff" min="0" max="10" step="0.5"/>
+              </div>
+            </div>
+            <br />
+            <div style="display: flex;">
+              <div class="flex-item">
+                <label for="comfort">Comfort</label>
+                <input type="range" id="comfort" name="comfort" min="0" max="10" step="0.5"/>
+              </div>
+              <div class="flex-item">
+                <label for="value">Value</label>
+                <input
+                  type="range"
+                  id="value"
+                  name="value"
+                  min="0"
+                  max="10"
+                  step="0.5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label>Feedback</label>
+            <textarea
+              class="fbtext"
+              id="subject"
+              name="subject"
+              placeholder="Write feedbacks.."
+            ></textarea>
+          </div>
+
+          <h4 style="margin-top: 1.5rem;">Guest Information</h4>
+          <br />
+
+          <div>
+            <div style="display: flex;">
+              <div class="flex-item2">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" placeholder value required />
+              </div>
+
+              <div class="flex-item2">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder value required />
+              </div>
+            </div>
+          </div>
+
+          <div class="large_input_text">
+            <label for="userName">Username</label>
+            <input
+              type="text"
+              id="userName"
+              placeholder="Username"
+              value
+              required
+              class="input_text"
+            />
+          </div>
+
+          <div class="large_input_text">
+            <label for="email"
+              >Email <span style="color: gray;">(Optional)</span></label
+            >
+            <input
+              type="text"
+              id="email"
+              placeholder="Email"
+              value
+              class="input_text"
+            />
+          </div>
+          <button class="feedback_btn">Send Feedback</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
